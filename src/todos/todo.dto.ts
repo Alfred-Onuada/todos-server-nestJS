@@ -5,7 +5,7 @@ import { IsString, IsNumber, IsEnum, IsNotEmpty } from 'class-validator';
 export class TodoDto {
   @IsNumber()
   @IsNotEmpty()
-  id: number;
+  _id: string;
 
   @IsString()
   @IsNotEmpty()
